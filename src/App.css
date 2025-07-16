@@ -7,6 +7,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+header{
+  padding:1rem 2rem;
+
+}
 footer{
   padding: 2rem;
   font-size: 14px;
