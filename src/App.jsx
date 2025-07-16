@@ -1,4 +1,5 @@
 import './App.css'
+import Footer from './components/Footer'
 
 function App() {
  
@@ -7,6 +8,8 @@ function App() {
     <>
     <h1>Cosmic</h1>
     <hr />
+
+    <Footer/>
     </>
   )
 }
