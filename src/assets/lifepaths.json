@@ -1,0 +1,685 @@
+ [
+        {
+            "number": 1,
+            "rulingPlanet": "Sun",
+            "qualities": [
+                "Independent",
+                "Leader",
+                "Confident",
+                "Innovative",
+                "Determined"
+            ],
+            "strengths": [
+                "Self-motivated",
+                "Ambitious",
+                "Courageous",
+                "Creative"
+            ],
+            "weaknesses": [
+                "Egoistic",
+                "Stubborn",
+                "Impatient",
+                "Overly Dominant"
+            ],
+            "life": "Life Path 1 individuals are natural leaders who excel in independent work and innovation.",
+            "career": "They thrive in entrepreneurship, politics, and leadership roles.",
+            "bestProfessions": [
+                "CEO",
+                "Inventor",
+                "Politician",
+                "Military Leader"
+            ],
+            "loveCompatibility": {
+                "best": [
+                    3,
+                    5
+                ],
+                "worst": [
+                    4
+                ]
+            },
+            "financialHabits": "Good at making money but may spend impulsively.",
+            "spiritualTraits": "Strong belief in personal power and destiny.",
+            "health": "Prone to heart and stress-related issues.",
+            "luckyNumbers": [
+                1,
+                10,
+                19
+            ],
+            "luckyColors": [
+                "Red",
+                "Gold"
+            ],
+            "famousPersonalities": [
+                "Amitabh Bachchan",
+                "Dhirubhai Ambani"
+            ],
+            "advice": "Learn teamwork and avoid being overly dominant."
+        },
+        {
+            "number": 2,
+            "rulingPlanet": "Moon",
+            "qualities": [
+                "Sensitive",
+                "Diplomatic",
+                "Cooperative",
+                "Intuitive",
+                "Empathetic"
+            ],
+            "strengths": [
+                "Peacemaker",
+                "Loyal",
+                "Understanding",
+                "Adaptable"
+            ],
+            "weaknesses": [
+                "Over-Sensitive",
+                "Indecisive",
+                "Dependent",
+                "Shy"
+            ],
+            "life": "Life Path 2 individuals are peacemakers who excel in relationships and teamwork.",
+            "career": "They do well in counseling, teaching, and the arts.",
+            "bestProfessions": [
+                "Therapist",
+                "Teacher",
+                "Musician",
+                "Diplomat"
+            ],
+            "loveCompatibility": {
+                "best": [
+                    6,
+                    8
+                ],
+                "worst": [
+                    5
+                ]
+            },
+            "financialHabits": "Cautious spenders who value stability.",
+            "spiritualTraits": "Deeply intuitive and drawn to emotional healing.",
+            "health": "Prone to stress-related illnesses.",
+            "luckyNumbers": [
+                2,
+                11,
+                20
+            ],
+            "luckyColors": [
+                "White",
+                "Silver"
+            ],
+            "famousPersonalities": [
+                "Mahatma Gandhi",
+                "Shah Rukh Khan"
+            ],
+            "advice": "Trust yourself and avoid being overly dependent on others."
+        },
+        {
+            "number": 3,
+            "rulingPlanet": "Jupiter",
+            "qualities": [
+                "Creative",
+                "Optimistic",
+                "Expressive",
+                "Fun-loving",
+                "Energetic"
+            ],
+            "strengths": [
+                "Charismatic",
+                "Intelligent",
+                "Versatile",
+                "Humorous"
+            ],
+            "weaknesses": [
+                "Superficial",
+                "Scattered",
+                "Irresponsible",
+                "Overconfident"
+            ],
+            "life": "Life Path 3 individuals are entertainers and communicators who inspire others.",
+            "career": "They shine in acting, writing, and public speaking.",
+            "bestProfessions": [
+                "Actor",
+                "Writer",
+                "Comedian",
+                "Motivational Speaker"
+            ],
+            "loveCompatibility": {
+                "best": [
+                    1,
+                    5
+                ],
+                "worst": [
+                    4
+                ]
+            },
+            "financialHabits": "Tends to spend on luxuries but earns well.",
+            "spiritualTraits": "Believes in positive energy and manifestation.",
+            "health": "Prone to throat and digestive issues.",
+            "luckyNumbers": [
+                3,
+                9,
+                12
+            ],
+            "luckyColors": [
+                "Yellow",
+                "Purple"
+            ],
+            "famousPersonalities": [
+                "Rajinikanth",
+                "Priyanka Chopra"
+            ],
+            "advice": "Stay focused and avoid distractions."
+        },
+        {
+            "number": 4,
+            "rulingPlanet": "Uranus",
+            "qualities": [
+                "Disciplined",
+                "Hardworking",
+                "Practical",
+                "Reliable",
+                "Responsible"
+            ],
+            "strengths": [
+                "Organized",
+                "Trustworthy",
+                "Strong-willed",
+                "Detail-oriented"
+            ],
+            "weaknesses": [
+                "Rigid",
+                "Stubborn",
+                "Workaholic",
+                "Lacks Spontaneity"
+            ],
+            "life": "Life Path 4 individuals are the builders who bring structure and stability.",
+            "career": "They excel in engineering, law enforcement, and management.",
+            "bestProfessions": [
+                "Engineer",
+                "Architect",
+                "Judge",
+                "Manager"
+            ],
+            "loveCompatibility": {
+                "best": [
+                    2,
+                    6
+                ],
+                "worst": [
+                    3
+                ]
+            },
+            "financialHabits": "Excellent at saving and financial planning.",
+            "spiritualTraits": "Practical and disciplined in spiritual practices.",
+            "health": "Prone to joint and bone-related issues.",
+            "luckyNumbers": [
+                4,
+                8,
+                22
+            ],
+            "luckyColors": [
+                "Blue",
+                "Gray"
+            ],
+            "famousPersonalities": [
+                "Narendra Modi",
+                "A.P.J. Abdul Kalam"
+            ],
+            "advice": "Embrace change and enjoy life beyond work."
+        },
+        {
+            "number": 5,
+            "rulingPlanet": "Mercury",
+            "qualities": [
+                "Adventurous",
+                "Freedom-loving",
+                "Versatile",
+                "Energetic",
+                "Curious"
+            ],
+            "strengths": [
+                "Smart",
+                "Charismatic",
+                "Innovative",
+                "Adaptable"
+            ],
+            "weaknesses": [
+                "Restless",
+                "Impulsive",
+                "Irresponsible",
+                "Easily Bored"
+            ],
+            "life": "Life Path 5 individuals are explorers who seek freedom and adventure.",
+            "career": "They thrive in travel, sales, and media industries.",
+            "bestProfessions": [
+                "Journalist",
+                "Entrepreneur",
+                "Public Speaker",
+                "Tour Guide"
+            ],
+            "loveCompatibility": {
+                "best": [
+                    1,
+                    7
+                ],
+                "worst": [
+                    2
+                ]
+            },
+            "financialHabits": "Spends impulsively but finds ways to make money fast.",
+            "spiritualTraits": "Seeks spiritual experiences rather than strict practices.",
+            "health": "Prone to nervous system issues and accidents.",
+            "luckyNumbers": [
+                5,
+                14,
+                23
+            ],
+            "luckyColors": [
+                "Green",
+                "Light Blue"
+            ],
+            "famousPersonalities": [
+                "Sachin Tendulkar",
+                "Deepika Padukone"
+            ],
+            "advice": "Stay committed and develop patience."
+        },
+        {
+            "number": 6,
+            "rulingPlanet": "Venus",
+            "qualities": [
+                "Caring",
+                "Responsible",
+                "Loyal",
+                "Romantic",
+                "Supportive"
+            ],
+            "strengths": [
+                "Nurturing",
+                "Creative",
+                "Loving",
+                "Balanced"
+            ],
+            "weaknesses": [
+                "Overprotective",
+                "Possessive",
+                "Self-sacrificing",
+                "Controlling"
+            ],
+            "life": "Life Path 6 individuals are caregivers who value love, family, and harmony.",
+            "career": "They thrive in healthcare, education, and arts.",
+            "bestProfessions": [
+                "Doctor",
+                "Teacher",
+                "Artist",
+                "Social Worker"
+            ],
+            "loveCompatibility": {
+                "best": [
+                    2,
+                    4
+                ],
+                "worst": [
+                    5
+                ]
+            },
+            "financialHabits": "Good at saving but spends generously on loved ones.",
+            "spiritualTraits": "Believes in universal love and kindness.",
+            "health": "Prone to heart and stress-related issues.",
+            "luckyNumbers": [
+                6,
+                15,
+                24
+            ],
+            "luckyColors": [
+                "Pink",
+                "Blue"
+            ],
+            "famousPersonalities": [
+                "Lata Mangeshkar",
+                "Aishwarya Rai"
+            ],
+            "advice": "Balance personal needs with caring for others."
+        },
+        {
+            "number": 7,
+            "rulingPlanet": "Neptune",
+            "qualities": [
+                "Intellectual",
+                "Spiritual",
+                "Analytical",
+                "Philosophical",
+                "Mysterious"
+            ],
+            "strengths": [
+                "Wise",
+                "Deep Thinker",
+                "Intuitive",
+                "Knowledge-Seeking"
+            ],
+            "weaknesses": [
+                "Isolated",
+                "Overthinking",
+                "Secretive",
+                "Emotionally Detached"
+            ],
+            "life": "Life Path 7 individuals are deep thinkers with a love for knowledge and spirituality.",
+            "career": "They excel in research, philosophy, and science.",
+            "bestProfessions": [
+                "Scientist",
+                "Philosopher",
+                "Astrologer",
+                "Writer"
+            ],
+            "loveCompatibility": {
+                "best": [
+                    5,
+                    9
+                ],
+                "worst": [
+                    8
+                ]
+            },
+            "financialHabits": "Saves well but may prefer intellectual wealth over material wealth.",
+            "spiritualTraits": "Highly spiritual and seeks hidden truths.",
+            "health": "Prone to anxiety and nervous system issues.",
+            "luckyNumbers": [
+                7,
+                16,
+                25
+            ],
+            "luckyColors": [
+                "Purple",
+                "Dark Blue"
+            ],
+            "famousPersonalities": [
+                "Swami Vivekananda",
+                "Amitabh Bachchan"
+            ],
+            "advice": "Stay connected with people and avoid isolation."
+        },
+        {
+            "number": 8,
+            "rulingPlanet": "Saturn",
+            "qualities": [
+                "Ambitious",
+                "Practical",
+                "Disciplined",
+                "Hardworking",
+                "Powerful"
+            ],
+            "strengths": [
+                "Goal-Oriented",
+                "Strong Leader",
+                "Persistent",
+                "Strategic"
+            ],
+            "weaknesses": [
+                "Materialistic",
+                "Stubborn",
+                "Workaholic",
+                "Cold"
+            ],
+            "life": "Life Path 8 individuals are destined for power, success, and financial stability.",
+            "career": "They thrive in business, law, and finance.",
+            "bestProfessions": [
+                "Business Executive",
+                "Lawyer",
+                "Banker",
+                "Politician"
+            ],
+            "loveCompatibility": {
+                "best": [
+                    2,
+                    4
+                ],
+                "worst": [
+                    7
+                ]
+            },
+            "financialHabits": "Excellent at making and managing money.",
+            "spiritualTraits": "Believes in karma and long-term vision.",
+            "health": "Prone to joint and bone-related issues.",
+            "luckyNumbers": [
+                8,
+                17,
+                26
+            ],
+            "luckyColors": [
+                "Black",
+                "Dark Gray"
+            ],
+            "famousPersonalities": [
+                "Ratan Tata",
+                "Mukesh Ambani"
+            ],
+            "advice": "Maintain work-life balance and be mindful of relationships."
+        },
+        {
+            "number": 9,
+            "rulingPlanet": "Mars",
+            "qualities": [
+                "Compassionate",
+                "Idealistic",
+                "Generous",
+                "Creative",
+                "Charitable"
+            ],
+            "strengths": [
+                "Visionary",
+                "Courageous",
+                "Wise",
+                "Inspiring"
+            ],
+            "weaknesses": [
+                "Impulsive",
+                "Overly Emotional",
+                "Restless",
+                "Naïve"
+            ],
+            "life": "Life Path 9 individuals are humanitarians with a mission to serve society.",
+            "career": "They excel in charity work, arts, and leadership.",
+            "bestProfessions": [
+                "Philanthropist",
+                "Artist",
+                "Spiritual Guru",
+                "Politician"
+            ],
+            "loveCompatibility": {
+                "best": [
+                    3,
+                    7
+                ],
+                "worst": [
+                    1
+                ]
+            },
+            "financialHabits": "Gives generously but may struggle with long-term financial planning.",
+            "spiritualTraits": "Highly spiritual and deeply connected to humanitarian causes.",
+            "health": "Prone to blood pressure and stress-related issues.",
+            "luckyNumbers": [
+                9,
+                18,
+                27
+            ],
+            "luckyColors": [
+                "Red",
+                "Orange"
+            ],
+            "famousPersonalities": [
+                "Mother Teresa",
+                "Salman Khan"
+            ],
+            "advice": "Focus on self-care while helping others."
+        },
+        {
+            "number": 11,
+            "rulingPlanet": "Moon & Neptune",
+            "qualities": [
+                "Visionary",
+                "Intuitive",
+                "Spiritual",
+                "Charismatic",
+                "Inspirational"
+            ],
+            "strengths": [
+                "Highly Creative",
+                "Empathetic",
+                "Deep Thinker",
+                "Leader"
+            ],
+            "weaknesses": [
+                "Over-Sensitive",
+                "Anxious",
+                "Self-Doubting",
+                "Emotionally Overwhelmed"
+            ],
+            "life": "Life Path 11 individuals are spiritual leaders and visionaries with a strong sense of purpose.",
+            "career": "They excel in spiritual leadership, arts, and counseling.",
+            "bestProfessions": [
+                "Guru",
+                "Psychologist",
+                "Artist",
+                "Spiritual Healer"
+            ],
+            "loveCompatibility": {
+                "best": [
+                    2,
+                    7
+                ],
+                "worst": [
+                    4
+                ]
+            },
+            "financialHabits": "Wealth may come unpredictably; they must learn financial discipline.",
+            "spiritualTraits": "Highly connected to the spiritual realm and intuitive insights.",
+            "health": "Prone to anxiety, insomnia, and nervous system disorders.",
+            "luckyNumbers": [
+                11,
+                29,
+                38
+            ],
+            "luckyColors": [
+                "Silver",
+                "White"
+            ],
+            "famousPersonalities": [
+                "Osho Rajneesh",
+                "Rabindranath Tagore"
+            ],
+            "advice": "Balance your emotions and avoid overthinking."
+        },
+        {
+            "number": 22,
+            "rulingPlanet": "Uranus & Saturn",
+            "qualities": [
+                "Master Builder",
+                "Ambitious",
+                "Disciplined",
+                "Visionary",
+                "Hardworking"
+            ],
+            "strengths": [
+                "Organized",
+                "Powerful",
+                "Goal-Oriented",
+                "Practical"
+            ],
+            "weaknesses": [
+                "Perfectionist",
+                "Overburdened",
+                "Stressed",
+                "Rigid"
+            ],
+            "life": "Life Path 22 individuals are master builders destined to create something great in their lifetime.",
+            "career": "They excel in engineering, politics, and leadership roles.",
+            "bestProfessions": [
+                "Architect",
+                "CEO",
+                "Politician",
+                "Philanthropist"
+            ],
+            "loveCompatibility": {
+                "best": [
+                    4,
+                    8
+                ],
+                "worst": [
+                    5
+                ]
+            },
+            "financialHabits": "Excellent money managers but may stress over financial security.",
+            "spiritualTraits": "Strong belief in destiny and long-term vision.",
+            "health": "Prone to stress-related issues and joint problems.",
+            "luckyNumbers": [
+                22,
+                4,
+                31
+            ],
+            "luckyColors": [
+                "Blue",
+                "Dark Gray"
+            ],
+            "famousPersonalities": [
+                "Dr. B.R. Ambedkar",
+                "Narendra Modi"
+            ],
+            "advice": "Learn to relax and trust the process."
+        },
+        {
+            "number": 33,
+            "rulingPlanet": "Venus & Jupiter",
+            "qualities": [
+                "Master Teacher",
+                "Compassionate",
+                "Selfless",
+                "Inspirational",
+                "Wise"
+            ],
+            "strengths": [
+                "Highly Loving",
+                "Empowering",
+                "Visionary",
+                "Spiritual"
+            ],
+            "weaknesses": [
+                "Over-Sacrificing",
+                "Emotionally Drained",
+                "Unrealistic Expectations"
+            ],
+            "life": "Life Path 33 individuals are enlightened teachers with a mission to uplift humanity.",
+            "career": "They excel in teaching, healing, and the arts.",
+            "bestProfessions": [
+                "Teacher",
+                "Spiritual Guide",
+                "Motivational Speaker",
+                "Healer"
+            ],
+            "loveCompatibility": {
+                "best": [
+                    6,
+                    9
+                ],
+                "worst": [
+                    1
+                ]
+            },
+            "financialHabits": "Generous with wealth, often donating or helping others.",
+            "spiritualTraits": "Deeply connected to higher consciousness and love.",
+            "health": "Prone to exhaustion, emotional distress, and heart-related issues.",
+            "luckyNumbers": [
+                33,
+                6,
+                15
+            ],
+            "luckyColors": [
+                "Gold",
+                "Pink"
+            ],
+            "famousPersonalities": [
+                "Mother Teresa",
+                "Swami Vivekananda"
+            ],
+            "advice": "Take care of yourself while helping others."
+        }
+    ]
