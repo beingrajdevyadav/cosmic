@@ -6,7 +6,7 @@ import VideoBackground from './components/VideoBackground.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* <App /> */}
-    <VideoBackground/>
+    <App />
+    {/* <VideoBackground/> */}
   </StrictMode>,
 )

@@ -111,8 +111,10 @@ export const getSoulUrgeNumber = (fullName) => {
 
 // Function to calculate personality number
 export const getPersonalityNumber = (fullName) => {
-    const consonantValues = { 'B': 2, 'C': 3, 'D': 4, 'F': 6, 'G': 7, 'H': 8, 'J': 1, 'K': 2, 'L': 3,
-        'M': 4, 'N': 5, 'P': 7, 'Q': 8, 'R': 9, 'S': 1, 'T': 2, 'V': 4, 'W': 5, 'X': 6, 'Y': 7, 'Z': 8 };
+    const consonantValues = {
+        'B': 2, 'C': 3, 'D': 4, 'F': 6, 'G': 7, 'H': 8, 'J': 1, 'K': 2, 'L': 3,
+        'M': 4, 'N': 5, 'P': 7, 'Q': 8, 'R': 9, 'S': 1, 'T': 2, 'V': 4, 'W': 5, 'X': 6, 'Y': 7, 'Z': 8
+    };
 
     let sum = 0;
     for (const char of fullName.toUpperCase()) {
@@ -149,7 +151,7 @@ export const getMaturityNumber = (fullName, dd, mm, yyyy) => {
     const destinyNumber = getDestinyNumber(fullName);
     const lifePathNumber = getLifePathNumber(dd, mm, yyyy);
 
-   
-    return getBirthdayNumber(destinyNumber + lifePathNumber)  ;
+
+    return getBirthdayNumber(destinyNumber + lifePathNumber);
 };
 

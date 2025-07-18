@@ -8,13 +8,13 @@ const CosmicForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("form submitted!")
+        // console.log("form submitted!")
     }
 
     const handleDateButtonClick = () => {
         dataRef.current.showPicker?.();
         dataRef.current.click();
-        console.log("data button clicked!");
+        // console.log("data button clicked!");
     }
     return (
         <div>
