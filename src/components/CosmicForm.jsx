@@ -9,6 +9,7 @@ const CosmicForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         // console.log("form submitted!")
+        console.log(birthDate);
     }
 
     const handleDateButtonClick = () => {
@@ -25,7 +26,7 @@ const CosmicForm = () => {
                 <div className="form-control">
                     <input style={{display:"none"}}  type="date" value={birthDate} placeholder='Enter your fullname' ref={dataRef} onChange={(e) => { setBirthDate(e.target.value) }} />
 
-                    <span>{birthDate}</span> : <button type='button' onClick={handleDateButtonClick}>Click to pick</button>
+                    <span>{birthDate}</span> : <button type='button' onClick={handleDateButtonClick}><i className="fa-solid fa-calendar-days"></i></button>
                 </div>
 
 
