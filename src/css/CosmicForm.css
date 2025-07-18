@@ -14,7 +14,9 @@
     border: 1px solid #eee;
     box-shadow: 4px 4px 510px #00000073;
 }
-
+form h1{
+    color: #ba8d34;
+}
 form .username {
     width: 100%;
     height: 50px;
@@ -24,7 +26,7 @@ form .username {
     border-radius: 3px;
     background-color: transparent;
     color: #ddd;
-    border: 1px solid #ddd;
+    border: 1px solid #bbb;
     margin-top: 1rem;
 
     color: #777;
@@ -55,8 +57,8 @@ form .date-control {
 .date-control button {
     background-color: #555;
     color: #fff;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     cursor: pointer;
     border: none;
     outline: none;
