@@ -2,15 +2,27 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     username: "",
-    dob:'',
+    dob: '',
     lifePathNum: "",
-    soulUrgeNum:"",
-    destinyNum:"",
-    personalityNum:'',
-    astroSign:'',
+    soulUrgeNum: "",
+    destinyNum: "",
+    personalityNum: '',
+    astroSign: '',
 
 }
 const cosmicSlice = createSlice({
-    name : "cosmic",
+    name: "cosmic",
+    initialState,
+    reducers: {
+        setCosmicData: (state, action) => {
+            return { ...state, ...action.payload };
+        },
 
-})
+        clearCosmicData: () => {
+            initialState
+    },
+    }
+});
+
+export const {setCosmicData, clearCosmicData} = cosmicSlice.actions;
+export default cosmicSlice.reducer;
