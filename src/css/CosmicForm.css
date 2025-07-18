@@ -26,19 +26,20 @@ form .username {
     color: #ddd;
     border: 1px solid #ddd;
     margin-top: 1rem;
-    transition: all .5s ease-in-out;
+
     color: #777;
 }
-form .username:focus{
+
+form .username:focus {
     border: 2px solid #bbb;
-
 }
 
-.hide-date-input{
+.hide-date-input {
     opacity: 0;
-pointer-events: none;
-position: absolute;
+    pointer-events: none;
+    position: absolute;
 }
+
 form .date-control {
     width: 100%;
     display: flex;
@@ -58,13 +59,14 @@ form .date-control {
     outline: none;
     border-radius: 50%;
     font-size: 20px;
-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 
 }
 
-.date-control button:hover{
+.date-control button:hover {
     background-color: #333;
 }
+
 .btn-control {
     text-align: end;
 }
@@ -78,8 +80,24 @@ transition: all .5s ease-in-out;
     border: none;
     outline: none;
     border-radius: 25px;
-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
-.btn-control button:hover{
+
+.btn-control button:hover {
     background-color: #333;
+}
+
+
+@media screen and (max-width:768px) {
+    .cosmic-form form {
+        width: 90%;
+    }
+
+    .btn-control {
+        margin-top: 2rem;
+    }
+
+    .btn-control button {
+        width: 100%;
+    }
 }

@@ -15,8 +15,10 @@ body {
 
 header {
   padding: 2rem;
-  background-color: #333;
+  background-color: #ba8d34;
   color: #fff;
+    box-shadow: 4px 4px 510px #00000073;
+  
 }
 
 

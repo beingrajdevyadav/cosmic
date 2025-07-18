@@ -5,7 +5,7 @@ import "../css/CosmicForm.css"
 const CosmicForm = () => {
     const [name, setName] = useState("");
     const [birthDate, setBirthDate] = useState("");
-const today = new Date().toISOString().split('T')[0];
+    const today = new Date().toISOString().split('T')[0];
 
 
 
@@ -18,7 +18,7 @@ const today = new Date().toISOString().split('T')[0];
     }
 
     const handleDateButtonClick = () => {
-        
+
         dataRef.current.showPicker?.();
         dataRef.current.click();
         // console.log("data button clicked!");
@@ -34,7 +34,7 @@ const today = new Date().toISOString().split('T')[0];
                 <div className="date-control">
                     <input className='hide-date-input' max={today} type="date" value={birthDate} placeholder='Enter your fullname' ref={dataRef} onChange={(e) => { setBirthDate(e.target.value) }} />
 
-                    <span>{birthDate}</span> : <button type='button' onClick={handleDateButtonClick}><i className="fa-solid fa-calendar-days"></i></button>
+                    <span>{birthDate? birthDate: "Choose Your DOB"}</span> : <button type='button' onClick={handleDateButtonClick}><i className="fa-solid fa-calendar-days"></i></button>
                 </div>
 
 
