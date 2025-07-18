@@ -106,6 +106,14 @@ const getSoulUrge = (fullname) => {
     return reduceNumber(total);
 }
 
+// personality number
+
+const getPersonalityNum = (fullname) => {
+    const name = fullname.toUpperCase().replace(/[^A-Z]/g, '');
+    const total = name.split('').filter((char) => !VOWELS.includes(char)).reduce((sum, char) => sum + letterToNumber[char], 0);
+    return reduceNumber(total);
+}
+
 const CosmicCalculator = (username, dob) => {
 
     // life path number
@@ -116,11 +124,12 @@ const CosmicCalculator = (username, dob) => {
     // astro sign
     const astroSign = getAstroSign(dob);
     // soul urge
-    const soulUrgeNumber = getSoulUrge(username);
+    const soulUrgeNum = getSoulUrge(username);
+    // personality number
+    const personalityNum = getPersonalityNum(username);
 
 
 
 
-
-    return { lifePathNum, astroSign, soulUrgeNumber }
+    return { lifePathNum, astroSign, soulUrgeNum, personalityNum }
 }
