@@ -9,42 +9,22 @@
 
 body {
   width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(to left, #021f342d, #ed0b713f), url('https://scitechdaily.com/images/Vast-Universe-Concept.gif');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  color: #ddd;
-  overflow-x: hidden;
-  overflow-y: auto;
+  color: #555;
+  background-color: #f1f1f1;
 }
 
 header {
-  padding: 1rem;
-  background-image: linear-gradient(to right,#80008025, #1e8fff25, #8000802e, #1e8fff2f , #8000802f);
-
+  padding: 2rem;
+  background-color: #333;
+  color: #fff;
 }
 
-header .logo {
-  background-image: linear-gradient(to right, #1e8fff85, #8000806f);
-  width: 120px;
-  text-align: center;
-  border-radius: 25px;
-  padding: .5rem;
-  cursor: pointer;
-  transition: background-image .5s ease-in-out;
-}
 
-header .logo:hover {
-
-  background-image: linear-gradient(to left, #8000806f, #1e8fff85, #8000806f);
-
-}
 
 footer {
   padding: 2rem;
   font-size: 14px;
   text-align: center;
-  /* background-image: linear-gradient(to right,#80008025, #1e8fff25, #8000802e, #1e8fff2f , #8000802f); */
-
+ background-color: #333;
+ color: #fff;
 }
