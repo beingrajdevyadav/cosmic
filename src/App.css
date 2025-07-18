@@ -15,15 +15,18 @@ body {
   background-size: cover;
   background-position: center;
   color: #ddd;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 header {
   padding: 1rem;
+  background-image: linear-gradient(to right,#80008025, #1e8fff25, #8000802e, #1e8fff2f , #8000802f);
 
 }
 
 header .logo {
-  background-image: linear-gradient(to right, dodgerblue, purple);
+  background-image: linear-gradient(to right, #1e8fff85, #8000806f);
   width: 120px;
   text-align: center;
   border-radius: 25px;
@@ -33,7 +36,8 @@ header .logo {
 }
 
 header .logo:hover {
-  background-image: linear-gradient(to left, dodgerblue, purple);
+
+  background-image: linear-gradient(to left, #8000806f, #1e8fff85, #8000806f);
 
 }
 
@@ -41,4 +45,6 @@ footer {
   padding: 2rem;
   font-size: 14px;
   text-align: center;
+  /* background-image: linear-gradient(to right,#80008025, #1e8fff25, #8000802e, #1e8fff2f , #8000802f); */
+
 }
