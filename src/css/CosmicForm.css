@@ -48,7 +48,10 @@ form .date-control {
     margin-top: 1rem;
     gap: 10px;
 }
-
+.date-control span{
+    font-size: 14px ;
+    color: #777;
+}
 .date-control button {
     background-color: #555;
     color: #fff;

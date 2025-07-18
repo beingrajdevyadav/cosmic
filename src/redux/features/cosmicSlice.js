@@ -13,16 +13,17 @@ const initialState = {
 const cosmicSlice = createSlice({
     name: "cosmic",
     initialState,
+
     reducers: {
         setCosmicData: (state, action) => {
             return { ...state, ...action.payload };
         },
 
         clearCosmicData: () => {
-            initialState
+          return  initialState
+        },
     },
-    }
 });
 
-export const {setCosmicData, clearCosmicData} = cosmicSlice.actions;
+export const { setCosmicData, clearCosmicData } = cosmicSlice.actions;
 export default cosmicSlice.reducer;
