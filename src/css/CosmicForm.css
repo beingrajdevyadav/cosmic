@@ -94,8 +94,11 @@ form .date-control {
 @media screen and (max-width:768px) {
     .cosmic-form form {
         width: 90%;
+        padding: 2rem;
     }
-
+form h1{
+    font-size: 26px;
+}
     .btn-control {
         margin-top: 2rem;
     }
