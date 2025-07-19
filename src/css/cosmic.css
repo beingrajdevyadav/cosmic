@@ -13,7 +13,12 @@
     box-shadow: 4px 4px 510px #00000073;
     margin:2rem  auto;
 }
-
+.cosmic hr{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    margin: .5rem 0;
+}
 .cosmic h2, .cosmic h3 {
     color: #ba8d34;
 
@@ -60,8 +65,12 @@ border-bottom: 1px solid #ddd;
     outline: none;
     border: none;
     cursor: pointer;
+    transition:  all .5s ease-in-out;
 }
+.cosmic button:hover{
+    background-color: #d19a2d;
 
+}
 
 /* //  */
 /* Force page break */

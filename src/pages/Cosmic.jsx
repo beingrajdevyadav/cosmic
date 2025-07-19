@@ -28,7 +28,7 @@ const Cosmic = () => {
 
   // to redirect
   const handleNext = () => {
-    toast.warn("Try Next Report!")
+    toast.success("Welcome To Cosmic!")
     navigate("/");
   }
   return (
@@ -97,8 +97,8 @@ const Cosmic = () => {
 
       <div className="cosmic">
         <div className="btn-box">
-          <button onClick={() => handleDownload()}>Download</button>
-          <button onClick={() => handleNext()}>Next Report</button>
+          <button onClick={() => handleDownload()}>Download <i className="fa-solid fa-download"></i></button>
+          <button onClick={() => handleNext()}>Next Report <i className="fa-solid fa-arrow-right"></i></button>
         </div>
       </div>
     </div>
