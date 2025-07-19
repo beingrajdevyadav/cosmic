@@ -18,14 +18,14 @@ const Cosmic = () => {
         <h2>Cosmic Report</h2>
         <hr />
 
-<div className="cosmic-info">
-  <p>Full Name : {cosmic.username}</p>
-  <p>Date of Birth : {cosmic.dob}</p>
-  <p>Life Path Number : {cosmic.lifePathNum}</p>
-  <p>Destiny Number : {cosmic.destinyNum}</p>
-  <p>Personality Number : {cosmic.personalityNum}</p>
-  <p>Astro Sign : {cosmic.astroSign}</p>
-</div>
+        <div className="cosmic-info">
+          <p><b>Full Name :</b>  {cosmic.username}</p>
+          <p><b>Date of Birth :</b>  {cosmic.dob}</p>
+          <p><b>Life Path Number :</b>  {cosmic.lifePathNum}</p>
+          <p><b>Destiny Number :</b>  {cosmic.destinyNum}</p>
+          <p><b>Personality Number :</b>  {cosmic.personalityNum}</p>
+          <p><b>Astro Sign :</b>  {cosmic.astroSign}</p>
+        </div>
 
       </div>
     </div>

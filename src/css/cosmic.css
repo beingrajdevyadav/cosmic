@@ -25,6 +25,10 @@
 .cosmic-info p{
 padding: .5rem 0;
 font-size: 14px;
+border-bottom: 1px solid #ddd;
+}
+.cosmic-info b{
+    margin-right: 1rem;
 }
 
 
