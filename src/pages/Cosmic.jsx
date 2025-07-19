@@ -3,6 +3,8 @@ import { useSelector } from 'react-redux'
 import data from '../assets/lifepaths.json';
 import "../css/cosmic.css"
 import { useNavigate } from 'react-router-dom';
+import DownloadPdf from '../utils/downloadPdf';
+import { toast } from 'react-toastify';
 
 
 const Cosmic = () => {
@@ -14,11 +16,21 @@ const Cosmic = () => {
 
   const cosmicReport = data.find((c) => c.number === cosmic.lifePathNum);
   console.log(cosmicReport)
- 
 
 
-  
 
+  // download functionality
+  const handleDownload = () => {
+    toast.success("Pdf Downloaded!")
+    DownloadPdf(cosmic.username, cosmicRef);
+  }
+
+
+  // to redirect
+  const handleNext = () => {
+    toast.warn("Try Next Report!")
+    navigate("/");
+  }
   return (
     <div className='cosmic-wrapper'>
       <div className="cosmic" ref={cosmicRef}>
@@ -52,9 +64,10 @@ const Cosmic = () => {
         </ul>
 
 
+
         <h3>Strengths</h3>
         <hr />
-        <ul>
+        <ul className='avoid-break'>
           {
             cosmicReport.strengths?.map((s, i) =>
               <li key={i}>{s}</li>
@@ -62,26 +75,30 @@ const Cosmic = () => {
           }
         </ul>
 
-        <h3>Weaknesses</h3>
-        <hr />
-        <ul>
-          {
-            cosmicReport.weaknesses?.map((w, i) =>
-              <li key={i}>{w}</li>
-            )
-          }
-        </ul>
+        
+          <h3>Weaknesses</h3>
+          <hr />
+          <ul className='avoid-break'>
+            {
+              cosmicReport.weaknesses?.map((w, i) =>
+                <li key={i}>{w}</li>
+              )
+            }
+          </ul>
 
-        <div className="reading">
-          <p><b>Health : </b> {cosmicReport.health}</p>
-          <p><b>Advice : </b> {cosmicReport.advice} </p>
-        </div>
+
+          <div className="reading avoid-break">
+            <p><b>Health : </b> {cosmicReport.health}</p>
+            <p><b>Advice : </b> {cosmicReport.advice} </p>
+          </div>
+
+      
       </div>
 
       <div className="cosmic">
         <div className="btn-box">
-        <button>Download</button>
-        <button>Next Report</button>
+          <button onClick={() => handleDownload()}>Download</button>
+          <button onClick={() => handleNext()}>Next Report</button>
         </div>
       </div>
     </div>
