@@ -1,0 +1,36 @@
+.cosmic-wrapper {
+    min-height: 90vh;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cosmic {
+    background-color: #fff;
+    padding: 2rem;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 4px 4px 510px #00000073;
+}
+
+.cosmic h2 {
+    color: #ba8d34;
+
+}
+.cosmic-info{
+    padding: 1rem 0;
+}
+.cosmic-info p{
+padding: .5rem 0;
+font-size: 14px;
+}
+
+
+@media screen and (max-width:768px) {
+    .cosmic {
+        width: 90%;
+        padding: 2rem;
+    }
+}

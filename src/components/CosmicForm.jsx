@@ -2,6 +2,9 @@ import React, { useRef, useState } from 'react'
 import "../css/CosmicForm.css"
 import CosmicCalculator from '../utils/cosmicCalculator';
 import { toast } from 'react-toastify';
+import { useDispatch } from 'react-redux';
+import { setCosmicData } from '../redux/features/cosmicSlice';
+import { useNavigate } from 'react-router-dom';
 
 
 const CosmicForm = () => {
@@ -10,7 +13,8 @@ const CosmicForm = () => {
     const today = new Date().toISOString().split('T')[0];
 
 
-
+const dispatch = useDispatch();
+const navigate = useNavigate();
     const dataRef = useRef();
 
     const handleSubmit = (e) => {
@@ -30,7 +34,9 @@ const CosmicForm = () => {
 
         const result = CosmicCalculator(name, birthDate);
         toast.success("Congratulations!")
-        console.log(result);
+        dispatch(setCosmicData(result));
+        navigate("/cosmic");
+        
     }
 
     const handleDateButtonClick = () => {

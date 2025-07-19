@@ -4,7 +4,7 @@ import CosmicForm from '../components/CosmicForm'
 const Home = () => {
   return (
     <>
-    <CosmicForm/>
+      <CosmicForm />
     </>
   )
 }
