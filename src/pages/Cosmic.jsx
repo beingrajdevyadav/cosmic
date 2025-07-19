@@ -12,7 +12,7 @@ const Cosmic = () => {
   // console.log(cosmic);
 
   const cosmicReport = data.find((c) => c.number === cosmic.lifePathNum);
-  // console.log(cosmicReport)
+  console.log(cosmicReport)
  
 
 
@@ -31,6 +31,12 @@ const Cosmic = () => {
           <p><b>Destiny Number :</b>  {cosmic.destinyNum}</p>
           <p><b>Personality Number :</b>  {cosmic.personalityNum}</p>
           <p><b>Astro Sign :</b>  {cosmic.astroSign}</p>
+        </div>
+
+        <div className="reading">
+          <p><b>Life Style :</b> {cosmicReport.life}</p>
+          <p><b>Financial Habits :</b> {cosmicReport.financialHabits} </p>
+          <p><b>Spiritual Traits :</b>  {cosmicReport.spiritualTraits}</p>
         </div>
 
         <h3>Qualities</h3>
@@ -64,6 +70,18 @@ const Cosmic = () => {
             )
           }
         </ul>
+
+        <div className="reading">
+          <p><b>Health : </b> {cosmicReport.health}</p>
+          <p><b>Advice : </b> {cosmicReport.advice} </p>
+        </div>
+      </div>
+
+      <div className="cosmic">
+        <div className="btn-box">
+        <button>Download</button>
+        <button>Next Report</button>
+        </div>
       </div>
     </div>
   )
