@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { useSelector } from 'react-redux'
 import data from '../assets/lifepaths.json';
 import "../css/cosmic.css"
@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 
 const Cosmic = () => {
+  const cosmicRef = useRef();
   const navigate = useNavigate();
 
   const cosmic = useSelector((state) => state.cosmic);
@@ -20,7 +21,7 @@ const Cosmic = () => {
 
   return (
     <div className='cosmic-wrapper'>
-      <div className="cosmic">
+      <div className="cosmic" ref={cosmicRef}>
         <h2>Cosmic Report</h2>
         <hr />
 
