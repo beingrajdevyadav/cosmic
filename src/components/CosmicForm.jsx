@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import "../css/CosmicForm.css"
+import CosmicCalculator from '../utils/cosmicCalculator';
 
 
 const CosmicForm = () => {
@@ -15,6 +16,9 @@ const CosmicForm = () => {
         e.preventDefault();
         // console.log("form submitted!")
         console.log(birthDate);
+
+        const result = CosmicCalculator(name, birthDate);
+        console.log(result);
     }
 
     const handleDateButtonClick = () => {
@@ -34,7 +38,7 @@ const CosmicForm = () => {
                 <div className="date-control">
                     <input className='hide-date-input' max={today} type="date" value={birthDate} placeholder='Enter your fullname' ref={dataRef} onChange={(e) => { setBirthDate(e.target.value) }} />
 
-                    <span>{birthDate? birthDate: "Choose Your DOB"}</span> : <button type='button' onClick={handleDateButtonClick}><i className="fa-solid fa-calendar-days"></i></button>
+                    <span>{birthDate ? birthDate : "Choose Your DOB"}</span> : <button type='button' onClick={handleDateButtonClick}><i className="fa-solid fa-calendar-days"></i></button>
                 </div>
 
 
