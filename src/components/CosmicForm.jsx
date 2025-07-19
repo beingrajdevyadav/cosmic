@@ -11,10 +11,10 @@ const CosmicForm = () => {
     const [name, setName] = useState("");
     const [birthDate, setBirthDate] = useState("");
     const today = new Date().toISOString().split('T')[0];
+    const [loading, setLoading] = useState(false);
 
-
-const dispatch = useDispatch();
-const navigate = useNavigate();
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
     const dataRef = useRef();
 
     const handleSubmit = (e) => {
@@ -33,10 +33,15 @@ const navigate = useNavigate();
         }
 
         const result = CosmicCalculator(name, birthDate);
-        toast.success("Congratulations!")
+        setLoading(true);
         dispatch(setCosmicData(result));
-        navigate("/cosmic");
-        
+        setTimeout(() => {
+            toast.success("Congratulations!")
+            navigate("/cosmic");
+            setLoading(false);
+        }, 3000)
+
+
     }
 
     const handleDateButtonClick = () => {
@@ -47,23 +52,29 @@ const navigate = useNavigate();
     }
     return (
         <div className='cosmic-form'>
-            <form action="" onSubmit={handleSubmit}>
+            {
+                loading ? (<div className='loader'> <img src="https://superstorefinder.net/support/wp-content/uploads/2018/01/orange_circles.gif" alt="" /> </div>
+                ) : (
+                    <form action="" onSubmit={handleSubmit}>
 
-                <h1> <span className='lg-txt'>Know Your</span>  <br />  Hidden Secrets</h1>
-                <div className="form-control">
-                    <input type="text" className='username' placeholder='Enter your fullname' value={name} onChange={(e) => setName(e.target.value)} />
-                </div>
-                <div className="date-control">
-                    <input className='hide-date-input' max={today} type="date" value={birthDate} placeholder='Enter your fullname' ref={dataRef} onChange={(e) => { setBirthDate(e.target.value) }} />
+                        <h1> <span className='lg-txt'>Know Your</span>  <br />  Hidden Secrets</h1>
+                        <div className="form-control">
+                            <input type="text" className='username' placeholder='Enter your fullname' value={name} onChange={(e) => setName(e.target.value)} />
+                        </div>
+                        <div className="date-control">
+                            <input className='hide-date-input' max={today} type="date" value={birthDate} placeholder='Enter your fullname' ref={dataRef} onChange={(e) => { setBirthDate(e.target.value) }} />
 
-                    <span>{birthDate ? birthDate : "Choose Your DOB"}</span> : <button type='button' onClick={handleDateButtonClick}><i className="fa-solid fa-calendar-days"></i></button>
-                </div>
+                            <span>{birthDate ? birthDate : "Choose Your DOB"}</span> : <button type='button' onClick={handleDateButtonClick}><i className="fa-solid fa-calendar-days"></i></button>
+                        </div>
 
 
-                <div className="btn-control">
-                    <button type='submit'>Submit</button>
-                </div>
-            </form>
+                        <div className="btn-control">
+                            <button type='submit'>Submit</button>
+                        </div>
+                    </form>
+                )
+            }
+
         </div>
     )
 }

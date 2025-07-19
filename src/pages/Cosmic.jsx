@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import { useSelector } from 'react-redux'
 import data from '../assets/lifepaths.json';
 import "../css/cosmic.css"
@@ -8,6 +8,8 @@ import { toast } from 'react-toastify';
 
 
 const Cosmic = () => {
+  const [loading, setLoading] = useState(false);
+
   const cosmicRef = useRef();
   const navigate = useNavigate();
 
@@ -28,11 +30,26 @@ const Cosmic = () => {
 
   // to redirect
   const handleNext = () => {
-    toast.success("Welcome To Cosmic!")
-    navigate("/");
+    setLoading(true)
+
+
+    setTimeout(() => {
+      toast.success("Welcome To Cosmic!")
+      navigate("/");
+      setLoading(false);
+    }, 3000);
   }
   return (
+    <>
+
+    {
+      loading?(
+<div className = 'loader' > <img src="https://superstorefinder.net/support/wp-content/uploads/2018/01/orange_circles.gif" alt="" /> </div>
+
+      ) : (
+
     <div className='cosmic-wrapper'>
+
       <div className="cosmic" ref={cosmicRef}>
         <h2>Cosmic Report</h2>
         <hr />
@@ -75,24 +92,24 @@ const Cosmic = () => {
           }
         </ul>
 
-        
-          <h3>Weaknesses</h3>
-          <hr />
-          <ul className='avoid-break'>
-            {
-              cosmicReport.weaknesses?.map((w, i) =>
-                <li key={i}>{w}</li>
-              )
-            }
-          </ul>
+
+        <h3>Weaknesses</h3>
+        <hr />
+        <ul className='avoid-break'>
+          {
+            cosmicReport.weaknesses?.map((w, i) =>
+              <li key={i}>{w}</li>
+            )
+          }
+        </ul>
 
 
-          <div className="reading avoid-break">
-            <p><b>Health : </b> {cosmicReport.health}</p>
-            <p><b>Advice : </b> {cosmicReport.advice} </p>
-          </div>
+        <div className="reading avoid-break">
+          <p><b>Health : </b> {cosmicReport.health}</p>
+          <p><b>Advice : </b> {cosmicReport.advice} </p>
+        </div>
 
-      
+
       </div>
 
       <div className="cosmic">
@@ -103,6 +120,10 @@ const Cosmic = () => {
       </div>
     </div>
   )
+}
+
+   
+ </> )
 }
 
 export default Cosmic

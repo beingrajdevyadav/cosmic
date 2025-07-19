@@ -1,3 +1,18 @@
+.loader{
+   height: 83vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.loader img{
+    width: 220px;
+    background-color: #fff;
+    box-shadow: 4px 4px 510px #00000073;
+    padding: 2rem;
+    border-radius: 50%;
+}
+
 .cosmic-wrapper {
     min-height: 110vh;
     height: auto;
