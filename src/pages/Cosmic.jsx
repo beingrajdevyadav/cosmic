@@ -2,15 +2,21 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import data from '../assets/lifepaths.json';
 import "../css/cosmic.css"
+import { useNavigate } from 'react-router-dom';
 
 
 const Cosmic = () => {
+  const navigate = useNavigate();
+
   const cosmic = useSelector((state) => state.cosmic);
-  console.log(cosmic);
+  // console.log(cosmic);
 
   const cosmicReport = data.find((c) => c.number === cosmic.lifePathNum);
-  console.log(cosmicReport)
+  // console.log(cosmicReport)
+ 
 
+
+  
 
   return (
     <div className='cosmic-wrapper'>
@@ -27,6 +33,37 @@ const Cosmic = () => {
           <p><b>Astro Sign :</b>  {cosmic.astroSign}</p>
         </div>
 
+        <h3>Qualities</h3>
+        <hr />
+
+        <ul>
+          {
+            cosmicReport.qualities?.map((q, i) =>
+              <li key={i}>{q}</li>
+            )
+          }
+        </ul>
+
+
+        <h3>Strengths</h3>
+        <hr />
+        <ul>
+          {
+            cosmicReport.strengths?.map((s, i) =>
+              <li key={i}>{s}</li>
+            )
+          }
+        </ul>
+
+        <h3>Weaknesses</h3>
+        <hr />
+        <ul>
+          {
+            cosmicReport.weaknesses?.map((w, i) =>
+              <li key={i}>{w}</li>
+            )
+          }
+        </ul>
       </div>
     </div>
   )

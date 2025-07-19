@@ -1,10 +1,8 @@
 .cosmic-wrapper {
-    min-height: 90vh;
+    min-height: 110vh;
     height: auto;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 .cosmic {
@@ -13,9 +11,10 @@
     width: 80%;
     border-radius: 5px;
     box-shadow: 4px 4px 510px #00000073;
+    margin:2rem  auto;
 }
 
-.cosmic h2 {
+.cosmic h2, .cosmic h3 {
     color: #ba8d34;
 
 }
@@ -31,6 +30,10 @@ border-bottom: 1px solid #ddd;
     margin-right: 1rem;
 }
 
+.cosmic ul{
+    padding:0.5rem 1rem;
+    font-size: 14px;
+}
 
 @media screen and (max-width:768px) {
     .cosmic {
