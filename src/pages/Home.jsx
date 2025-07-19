@@ -1,8 +1,11 @@
 import React from 'react'
+import CosmicForm from '../components/CosmicForm'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+    <CosmicForm/>
+    </>
   )
 }
 

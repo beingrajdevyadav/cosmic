@@ -4,7 +4,7 @@ const Header = () => {
     return (
         <header>
             <div className="logo2">
-                <h1>Cosmic</h1>
+                <h1><i className="fa-solid fa-wand-sparkles"></i></h1>
             </div>
         </header>
     )

@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import "../css/CosmicForm.css"
 import CosmicCalculator from '../utils/cosmicCalculator';
+import { toast } from 'react-toastify';
 
 
 const CosmicForm = () => {
@@ -14,10 +15,21 @@ const CosmicForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // console.log("form submitted!")
-        console.log(birthDate);
+
+        if (!name) {
+            // console.log('Enter your name!');
+            toast.warn("Enter Your Fullname!");
+            return
+        }
+        if (!birthDate) {
+            // console.log("Select your date of birth");
+            toast.warn("Choose Your DOB!");
+
+            return;
+        }
 
         const result = CosmicCalculator(name, birthDate);
+        toast.success("Congratulations!")
         console.log(result);
     }
 
