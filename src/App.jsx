@@ -6,6 +6,7 @@ import Home from './pages/Home'
 import Cosmic from './pages/Cosmic'
 import PageNotFound from './pages/PageNotFound'
 import { useSelector } from 'react-redux'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
   return (
     <>
       <Header />
+      <ScrollToTop/>
       <Routes>
         <Route path='/' element={<Home/> } />
         <Route path='/cosmic' element={username? <Cosmic/> : <Home/> } />
